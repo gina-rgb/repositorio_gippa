@@ -1,0 +1,46 @@
+@import "variables";
+
+/*-------------------- CAMBIOS en FAQ --------------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-faq {
+	background-image: url(../media/iniciofaq1.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.intro-faq {
+	margin-top: 600px;
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 100px 150px 300px;
+	grid-row-gap: 80px 100px;
+	grid-template-areas:
+	"titulo" 
+	"texto" 
+	"preguntas"
+}
+
+.intro-faq__title {
+	grid-area: titulo;
+	font-family: 'Poppins';
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: left;
+	width: 280px; 
+}
+
+.intro-faq__text {
+	grid-area: texto;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	text-align: left;
+	width: 220px; 
+}
+
+.intro-faq__link {
+	grid-area: preguntas;
+	font-family: 'Open Sans';
+	font-size: 1.5rem;
+	text-align: left;
+	width: 220px; 
+}

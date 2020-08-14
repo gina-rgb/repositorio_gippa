@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 500px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: left;
+  margin-left: 50px; }
+
+.section-contact {
+  height: 300px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 150px; }
+
+#main-form {
+  margin-left: 150px;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 50px 50px 200px 50px;
+  grid-template-areas: "name mail" "subject celular" "mensaje mensaje" "boton ."; }
+
+.form__1 {
+  grid-area: name; }
+
+.form__2 {
+  grid-area: mail; }
+
+.form__3 {
+  grid-area: subject; }
+
+.form__4 {
+  grid-area: celular; }
+
+.form__5 {
+  grid-area: mensaje; }
+
+.form__6 {
+  grid-area: boton; }
+
+.form__item {
+  list-style-type: none;
+  list-style: none;
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left; }
+
+.section-contact__text {
+  display: inline-block;
+  text-align: left;
+  width: 400px;
+  height: 60px;
+  margin-top: 10px; }
+
+.form__input {
+  background-color: white;
+  outline: none;
+  border: 1.5px solid black;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans'; }

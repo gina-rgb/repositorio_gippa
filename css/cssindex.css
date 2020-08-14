@@ -1,0 +1,409 @@
+/* ID se define con # y es para dar estilo en particular
+a un elemento. NO ES REPETIBLE. cada uno es único. en HTML
+pongo label ID en el elemento a especificar y agrego los 
+atributos en css*/
+
+/*CLASS se define con . y es para dar estilos más generales.
+en HTML pongo label class en el elemento que quiero que se
+modifique con los atributos que ponga en css. es como darle
+un nombre a los elementos para que los busque y reconozca*/
+
+
+/*AJUSTE DE PX A REM -- 16px son igual a 1 rem --*/
+html {
+	font-size: 62.5%;
+}
+
+/*------------CAMBIOS GENÉRICOS EN TODA LA WEB------------*/
+
+	/*COLOR TITULO LETTERPRESS - al elemento simplemente*/
+h1 {
+	display: inline-block;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	margin-top: 10px;
+	}
+
+	/*BOTONES*/
+
+#button {
+  background-color: transparent; 
+  border: 2px solid black; /* MAGENTA */
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: black; 
+  color: white;
+}
+
+	/*MENÚ*/
+
+header a {
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	font-family: poppins;
+	font-weight: bold;
+	text-align: right;
+}
+
+.menu {
+	display: inline-block;
+	list-style: none;
+	color: black;
+	text-align: right;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: right;
+}
+
+ul {
+	width: auto;
+	float: right;
+	margin-top: 10px;
+}
+
+	/*FOOTER*/
+.footer {
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+  	padding: 0px;
+}
+
+.textoFooter {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	color: white;
+	margin-left: 50px;
+}
+
+
+
+
+
+
+/*----------------INDEX----------------*/
+
+	/*IMAGEN DE FONDO*/ 
+#inicio-index {
+	background-image: url(../media/sinfondogrande.png);
+	background-position: top left;
+	background-repeat: repeat-y;
+	background-size: 1500px;
+}
+
+	/*TITULO: ESTUDIO CREATIVO*/
+h2 {
+	display: inline-block;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 15rem;
+	text-align: left;
+	line-height: 15rem;
+	letter-spacing: -1rem;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+}
+
+	/*SUBTITULO "HOLA!"*/
+.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	color: black;
+	margin-left: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+	/*PARRAFOS*/
+.normal {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: black;
+	text-align: left;
+	width: 600px;
+	height: 40px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+	/*FLEXBOX INDEX*/
+
+.section2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 500px;
+}
+
+.section3 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+	/*SERVICIOS SECCION*/ 
+.indexServicios {
+	display: grid;
+	width: 100%;
+	height: 500px;
+	grid-template-areas:
+	"styleSubtitle"
+	"textoVision";
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: 300px;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	justify-content: center;
+
+}
+
+.styleSubtitle {
+	display: grid;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	color: black;
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+.textoVision {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: black;
+	text-align: center;
+	width: 250px;
+}
+
+.saberMas {
+	display: flex;
+	align-items: center;
+}
+
+.imagenSaberMas{
+
+}
+.whiteBox {
+	background-color: white;
+	position: relative;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	color: black;	
+}
+
+.textoSaberMas {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: black;
+	width: 250px;
+	text-align: justify;
+}
+
+	/*FORMULARIO CONTACTO*/
+/*.grid-container-contact {
+  display: grid;
+  grid-template-columns: 300px 150px 150px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+  "contact contact contact contact contact" 
+  "texto-consulta texto-consulta formulario formulario formulario" 
+  "texto-consulta texto-consulta formulario formulario formulario"
+  border 1px dotted red; 
+}
+*/
+
+.contactoSubtitulo {
+	display: inline-block;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+
+.texto-consulta {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: black;
+	width: 300px;
+	height: 50px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+
+.editContact {
+	list-style-type: none;
+	list-style: none;
+	color: black;
+	font-family: 'Poppins', sans-serif
+	font-size: 3.5rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+
+
+
+/*----------------NOSOTROS----------------*/
+
+	/*IMAGEN DE FONDO*/
+#inicio-nosotros {
+	background-image: url(../media/inicionosotros.png);
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+.fotoUs {
+	background-color: white;
+	margin-top: 650px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.serviciostexto {
+	display: inline-block;
+	margin-top: 650px
+}
+
+.servicios {
+	font-family: open sans;
+	font-size: 2rem;
+	font-style: normal;
+	color: black;
+	text-align: center;
+}
+
+
+
+/*----------------SERVICIOS----------------*/
+
+	/*IMAGEN DE FONDO*/
+#inicio-servicios {
+	background-image: url(../media/inicioservicios.png);
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+/*.seccion1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.seccion2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.seccion3 {
+	display: flex;
+	flex-direction: row;
+}
+
+.seccion4 {
+	display: flex;
+	flex-direction: row;
+}
+
+.seccion5 {
+	display: flex;
+	flex-direction: row;
+}
+*/
+
+/*----------------PORTFOLIO----------------*/
+
+	/*IMAGEN DE FONDO*/
+#inicio-portfolio {
+	background-image: url(../media/inicioportfolio1.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+	/*FLEXBOX PORTFOLIO*/
+
+/*.bloquePortfolio {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+*/
+
+.bloquePortfolio {
+	display: grid;
+	grid-template-columns: repeat(3 350px);
+	grid-template-rows: repeat(2 350px);
+}
+
+
+
+
+/*----------------FAQ----------------*/
+
+	/*IMAGEN DE FONDO*/
+#inicio-faq {
+	background-image: url(../media/iniciofaq1.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.frequentquest {
+	display: inline-block;
+	margin-top: 650px;
+	margin-left: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

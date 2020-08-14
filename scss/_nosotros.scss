@@ -1,0 +1,102 @@
+@import "variables";
+
+/*VARIABLES NOSOTROS*/
+$fonttextus: Open sans;
+$fontsizeus: 1.5rem;
+$colorblack: #000000;
+$alignus: left;
+$aligncenter: center;
+
+
+/*-------------------- CAMBIOS en NOSOTROS ---------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-nosotros {
+	background-image: url(../media/inicionosotros.png);
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+
+.main-phrase {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 600px;
+	margin-bottom: 150px;
+}
+
+.main-phrase__text {
+	textalign: center;
+	width: 600px;
+}
+
+.main-phrase__strong {
+	font-family: 'Poppins';
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+/*.photo-team {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}*/
+
+.photo-team {
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-columns: 600px 600px;
+	grid-template-rows: 400px 50px 100px;
+	grid-template-areas: 
+	"img-tala img-gina" "text-title-tala text-title-gina" "text-tala text-gina";
+}
+
+.photo-team__tala {
+	grid-area: img-tala;
+}
+
+.photo-team__gina {
+	grid-area: img-gina;
+}
+
+.photo-team__title-tala {
+	grid-area: text-title-tala;
+}
+
+.photo-team__title-gina {
+	grid-area: text-title-gina;
+}
+
+.photo-team__texttala {
+	grid-area: text-tala;
+}
+
+.photo-team__textgina {
+	grid-area: text-gina;
+}
+
+.photo-team__text {
+	font-family: $fonttextus;
+	font-size: $fontsizeus;
+	color: $colorblack;
+	text-align: $alignus;
+}
+
+.photo-team__title {
+	font-family: 'Poppins', sans serif;
+	font-size: 2rem;
+	color: black;
+}
+
+.section-us__text {
+	font-family: 'Open Sans', sans serif;
+	font-size: 1.5rem;
+	color: black;
+	text-align: center;
+	background-color: lightblue;
+	height: 200px;
+}

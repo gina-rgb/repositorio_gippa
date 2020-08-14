@@ -1,0 +1,508 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*AJUSTE DE PX A REM -- 16px son igual a 1 rem --*/
+html {
+	font-size: 62.5%;
+}
+
+/*---------------- CAMBIOS GENÉRICOS PARA TODO ----------------*/
+/*LOGO*/
+.main-logo {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+	padding-right: 10px;
+}
+
+/*BOTONES*/
+#button {
+  background-color: transparent; 
+  border: 2px solid black; /* MAGENTA */
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: black; 
+  color: white;
+}
+
+/*MENÚ*/
+#header-menu {
+	text-decoration: none;
+	color: black;
+}
+.main-menu {
+	width: auto;
+	float: right;
+	margin-top: 20px;
+	color: black;
+}
+
+.main-menu_item {
+	list-style-type: none;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.cool-link::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: black;
+	transition: width 1s;
+}
+
+.cool-link:hover::after {
+	width: 100%;
+	transition: width 1s;
+}
+
+/*FOOTER*/
+.main-footer {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.main-footer_GIPPA {
+	font-family: poppins;
+    font-weight: bold;
+    font-size: 2rem;
+    display: inline-block;
+	margin-top: 60px;
+	color: white;
+	justify-content: center;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: black;
+	margin-left: 50px;
+}
+
+.main-footer_paragraph {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: white;
+	margin-left: 50px;
+	text-align: center;
+}
+/*-------------------- CAMBIOS en INDEX --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-index {
+	background-image: url(../media/sinfondogrande.png);
+	background-position: top left;
+	background-repeat: repeat-y;
+	background-size: 1500px;
+}
+/*BIENVENIDA*/
+.main-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 500px;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 15rem;
+	text-align: left;
+	line-height: 15rem;
+	letter-spacing: -1rem;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+}
+
+.main-title_hello {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	color: black;
+	margin-left: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.main-title_text {
+	display: inline-block;
+	text-align: left;
+	width: 600px;
+	height: 40px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+/*GALERIA PRINCIPAL*/
+.main-gallery {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*VALORES*/
+.section-value {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: black;
+	width: 100%;
+	height: 300px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.section-value_item {
+	text-align: center;
+	color: white;
+}
+
+.section-value_text {
+	display: inline-block;
+	margin-top: 60px;
+	color: white;
+	align-items: center;
+}
+
+.section-value_strongText {
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+
+/*SABER MAS SERVICIOS*/
+.section-servicios {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 800px;
+	align-content: center;
+}
+
+.section-servicios_img {
+	margin-left: auto;
+	margin-bottom: 150px;
+}
+
+.section-servicios_text {
+	display: inline-block;
+	background-color: white;
+	height: 350px;
+	width: 800px;
+	text-align: justify;
+	padding: 50px 50px 50px 50px;
+	margin-right: auto;
+}
+
+.section-servicios_strongText {
+	font-size: 3rem;
+	font-weight: bold;
+	color: black;
+}
+/*CONTACTO*/
+.main-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 500px;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 5rem;
+	text-align: left;
+	margin-left: 50px;
+}
+
+.section-contact {
+	height: 300px;
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 150px;
+}
+
+.main-form {
+	margin-left: 150px;
+	display: grid;
+	grid-column-gap: 40px;
+	grid-row-gap: 10px;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 50px 50px 200px 50px;
+	grid-template-areas: 
+	"name mail" "subject celular" "mensaje mensaje" "boton ."
+}
+
+.form_1 {
+	grid-area: name;
+}
+
+.form_2 {
+	grid-area: mail;
+}
+
+.form_3 {
+	grid-area: subject;
+}
+
+.form_4 {
+	grid-area: celular;
+}
+
+.form_5 {
+	grid-area: mensaje;
+}
+
+.form_6 {
+	grid-area: boton;
+}
+
+.form_item {
+	list-style-type: none;
+	list-style: none;
+	color: black;
+	font-family: 'Open Sans';
+	font-size:1.5rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+.section-contact_text {
+	display: inline-block;
+	text-align: left;
+	width: 400px;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.form_input {
+	background-color: white;
+	outline: none;
+	border: 1.5px solid black;
+	width: 100%;
+	padding: 12px;
+	font-size: 1.2rem;
+	font-family: 'Open Sans';
+}
+
+/*-------------------- CAMBIOS en NOSOTROS ---------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-nosotros {
+	background-image: url(../media/inicionosotros.png);
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+.main-phrase {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 600px;
+}
+
+.photo-team {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.photo-team_us {
+	margin-top: 30px;
+}
+
+/*-------------------- CAMBIOS en PORTFOLIO --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-portfolio {
+	background-image: url(../media/inicioportfolio1.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.portfolio-gallery {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 700px;
+	margin-bottom: 150px;
+}
+
+/*-------------------- CAMBIOS en SERVICIOS --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-servicios {
+	background-image: url(../media/inicioservicios.png);
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+.section1-service {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 600px;
+	margin-bottom: 150px;
+}
+
+.section1-service_text {
+	text-align: center;
+	width: 600px;
+}
+
+.section1-service_strong {
+	font-family: 'Poppins';
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.main-services {
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 700px 700px;
+	grid-template-rows: 400px 400px 400px 400px 400px 400px ;
+	grid-template-areas:
+	"imagen1 texto1" "texto2 imagen2" "imagen3 texto3" "texto4 imagen4" "imagen5 texto5" "texto6 imagen6"
+}
+
+.main-services_img1 {
+	grid-area: imagen1;
+}
+
+.main-services_img2 {
+	grid-area: imagen2;
+}
+
+.main-services_img3 {
+	grid-area: imagen3;
+}
+
+.main-services_img4 {
+	grid-area: imagen4;
+}
+
+.main-services_img5 {
+	grid-area: imagen5;
+}
+
+.main-services_img6 {
+	grid-area: imagen6;
+}
+
+.main-services_text1 {
+	grid-area: texto1;
+	text-align: left;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	width: 400px;
+	align-items: center;
+}
+
+.main-services_text2 {
+	grid-area: texto2;
+	text-align: right;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	width: 400px;
+}
+
+.main-services_text3 {
+	grid-area: texto3;
+	text-align: left;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	width: 400px;
+}
+
+.main-services_text4 {
+	grid-area: texto4;
+	text-align: right;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	width: 400px;
+}
+
+.main-services_text5 {
+	grid-area: texto5;
+	text-align: left;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	width: 400px;
+}
+
+.main-services_text6 {
+	grid-area: texto6;
+	text-align: right;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	width: 400px;
+}
+
+/*-------------------- CAMBIOS en FAQ --------------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-faq {
+	background-image: url(../media/iniciofaq1.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.intro-faq {
+	margin-top: 600px;
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 100px 150px 300px;
+	grid-row-gap: 80px 100px;
+	grid-template-areas:
+	"titulo" 
+	"texto" 
+	"preguntas"
+}
+
+.intro-faq_title {
+	grid-area: titulo;
+	font-family: 'Poppins';
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: left;
+	width: 280px; 
+}
+
+.intro-faq_text {
+	grid-area: texto;
+	font-family: 'Open Sans';
+	font-size: 2rem;
+	text-align: left;
+	width: 220px; 
+}
+
+.intro-faq_link {
+	grid-area: preguntas;
+	font-family: 'Open Sans';
+	font-size: 1.5rem;
+	text-align: left;
+	width: 220px; 
+}

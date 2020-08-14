@@ -1,0 +1,94 @@
+@import "variables";
+
+/*---------------- CAMBIOS GENÉRICOS PARA TODO ----------------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*AJUSTE DE PX A REM -- 16px son igual a 1 rem --*/
+html {
+	font-size: 62.5%;
+}
+
+
+/*LOGO*/
+.main-logo {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+	padding-right: 10px;
+}
+
+/*BOTONES*/
+#button {
+  background-color: transparent; 
+  border: 2px solid black; /* MAGENTA */
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: black; 
+  color: white;
+}
+
+/*MENÚ*/
+.nav__menu {
+	background-color: white;
+}
+
+#header__menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-menu {
+	width: auto;
+	float: right;
+	margin-top: 20px;
+	color: black;
+}
+
+.main-menu__item {
+	list-style-type: none;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.cool__link::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: black;
+	transition: width 1s;
+}
+
+.cool__link:hover::after {
+	width: 100%;
+	transition: width 1s;
+}
+
+/*TEXTO*/
+
+p {
+	font-family: 'Open Sans';
+	font-size: 1.5rem;
+}

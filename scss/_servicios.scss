@@ -1,0 +1,157 @@
+@import "variables";
+
+
+
+/*-------------------- CAMBIOS en SERVICIOS --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-servicios {
+	background-image: url(../media/inicioservicios.png);
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 5s;
+}
+
+.animate__animated .animate__slideInRight {
+	--animate-duration: 5s;
+}
+
+.animate__animated .animate__slideInLeft {
+	--animate-duration: 5s;
+}
+
+.section1-service {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 600px;
+	margin-bottom: 150px;
+}
+
+.section1-service__textinicio {
+	text-align: center;
+	width: 600px;
+}
+
+.section1-service__strong {
+	font-family: 'Poppins';
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.main-services__title {
+	font-family: $font-poppins;
+	color: $font-pink;
+	font-size: $font-3rem;
+	font-weight: bold;
+}
+
+.text-to-right {
+	padding-left: 5rem;
+}
+
+.main-services {
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 700px 700px;
+	grid-template-rows: 400px 400px 400px 400px 400px 400px ;
+	grid-template-areas:
+	"imagen1 texto1" "texto2 imagen2" "imagen3 texto3" "texto4 imagen4" "imagen5 texto5" "texto6 imagen6"
+}
+
+.main-services__img1 {
+	grid-area: imagen1;
+}
+
+.main-services__img2 {
+	grid-area: imagen2;
+}
+
+.main-services__img3 {
+	grid-area: imagen3;
+}
+
+.main-services__img4 {
+	grid-area: imagen4;
+}
+
+.main-services__img5 {
+	grid-area: imagen5;
+}
+
+.main-services__img6 {
+	grid-area: imagen6;
+}
+
+
+$font-text: Open Sans;
+$font-black: #000000; /*black*/
+$font-texttamaño: 2.5rem;
+
+.main-services__text1 {
+	grid-area: texto1;
+	text-align: left;
+	font-family: $font-text;
+	font-size: $font-texttamaño;
+	width: 400px;
+	align-items: center;
+	margin-top: 15%;
+	color: $font-black; 	
+}
+
+.main-services__text2 {
+	grid-area: texto2;
+	text-align: right;
+	font-family: $font-text;
+	font-size: $font-texttamaño;
+	width: 400px;
+	margin-top: 15%;
+	margin-left: 30%;
+	color: $font-black;
+}
+
+.main-services__text3 {
+	grid-area: texto3;
+	text-align: left;
+	font-family: $font-text;
+	font-size: $font-texttamaño;
+	width: 400px;
+	margin-top: 15%;
+	color: $font-black;
+}
+
+.main-services__text4 {
+	grid-area: texto4;
+	text-align: right;
+	font-family: $font-text;
+	font-size: $font-texttamaño;
+	width: 400px;
+	margin-top: 15%;
+	margin-left: 30%;
+	color: $font-black;
+}
+
+.main-services__text5 {
+	grid-area: texto5;
+	text-align: left;
+	font-family: $font-text;
+	font-size: $font-texttamaño;
+	width: 400px;
+	margin-top: 15%;
+	color: $font-black;
+}
+
+.main-services__text6 {
+	grid-area: texto6;
+	text-align: right;
+	font-family: $font-text;
+	font-size: $font-texttamaño;
+	width: 400px;
+	margin-top: 15%;
+	margin-left: 30%;
+	color: $font-black;
+}
+
