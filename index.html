@@ -10,7 +10,7 @@
         content="Somos GIPPA LABB, un estudio creativo que produce ideas en un laboratorio donde experimentamos, nos divertimos y generamos soluciones a través del Diseño.Nos caracterizamos por la versatilidad de nuestro equipo: Letterpress, lettering, ilustraciones, muralismo, diseño indutrial y más!">
     <meta name="keywords" content="HTML,ASP,JS,META,letterpress,estudio,creativo,diseño,gráfico,industrial,tipografía,">
     <!--LINK AL CSS-->
-    <link rel="stylesheet" type="text/css" href="css/new-styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/styles-scss.css">
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--ANIMATE CSS-->
@@ -38,33 +38,32 @@
         <div class="container-fluid">
             <div class="logo float-left">
                 <a href="index.html">
-                    <img class="main-logo img-fluid" src="media/gippa-labb.png" alt="gippa-lab">
+                    <img class="main-logo img-fluid" src="media/gippa-labb.png" alt="gippa-lab" width="20%">
                 </a>
-            </div>
 
-            <nav class="nav__menu float-right d-none d-lg-block">
+                <nav class="nav__menu float-right d-none d-lg-block">
 
-                <ul class="main-menu">
-                    <li class="main-menu__item cool__link"><a href="equipo.html" title="">Equipo</a></li>
-
-                    <li class="main-menu__item cool__link"><a href="portfolio.html" title="">Portfolio</a></li>
-
-                    <li class="main-menu__item cool__link"><a href="servicios.html" title="">Servicios</a></li>
-
-                    <li class="main-menu__item cool__link"><a href="faq.html" title="">FAQ</a></li>
-
-                    <li class="main-menu__item cool__link"><a href="#formulario" title="">Contacto</a></li>
-                </ul>
-            </nav>
+                    <ul class="main-menu">
+                        <li class="main-menu__item cool__link"><a href="equipo.html" title="">Equipo</a></li>
+    
+                        <li class="main-menu__item cool__link"><a href="portfolio.html" title="">Portfolio</a></li>
+    
+                        <li class="main-menu__item cool__link"><a href="servicios.html" title="">Servicios</a></li>
+    
+                        <li class="main-menu__item cool__link"><a href="faq.html" title="">FAQ</a></li>
+    
+                        <li class="main-menu__item cool__link"><a href="#formulario" title="">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>        
         </div>
     </header>
 
     <!----------------------SECCIÓN 2 -- NOSOTROS---------------------->
-    <section class="container">
-        <h1 class="main-title">Estudio Creativo</h1>
+    <section class="container row">
+        <div class="col-sm-6 col-lg-6 animate__animated animate__fadeInUp">
+            <h1 class="main-title">Estudio Creativo</h1>
 
-        <div>
-            <!-- DIV:Divisor,bloque,delimita areas web -->
             <h4 class="main-title__hello">¡Hola!</h4>
             <br>
             <p class="main-title__text">Somos GIPPA LABB, un estudio creativo que produce ideas en un laboratorio donde
@@ -80,7 +79,7 @@
             <!-- BOTON LINK AL HTML NOSOTROS -->
             <button id="button" href='nosotros.html'>Read more</button>
             <br><br><br><br>
-        </div>
+        </div>     
     </section>
 
     <!-------------------SECCIÓN 3 -- GALLERY/PORTFOLIO------------------->

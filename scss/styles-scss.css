@@ -1,0 +1,755 @@
+@charset "UTF-8";
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*---------------- CAMBIOS GENÉRICOS PARA TODO ----------------*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*AJUSTE DE PX A REM -- 16px son igual a 1 rem --*/
+html {
+  font-size: 62.5%;
+}
+
+/*LOGO*/
+.main-logo {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding-right: 10px;
+}
+
+/*BOTONES*/
+#button {
+  background-color: transparent;
+  border: 2px solid black;
+  /* MAGENTA */
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: black;
+  color: white;
+}
+
+/*MENÚ*/
+.nav__menu {
+  background-color: white;
+  height: 40px;
+}
+
+#header__menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-menu {
+  width: auto;
+  float: right;
+  margin-top: 20px;
+  color: black;
+}
+
+.main-menu__item {
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.cool__link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: black;
+  transition: width 1s;
+}
+
+.cool__link:hover::after {
+  width: 100%;
+  transition: width 1s;
+}
+
+/*TEXTO*/
+p {
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+}
+
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*-------------------- CAMBIOS en INDEX --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-index {
+  background-image: url(../media/sinfondogrande.png);
+  background-position: top left;
+  background-repeat: repeat-y;
+  background-size: 1500px;
+}
+
+/*BIENVENIDA*/
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 500px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 15rem;
+  text-align: left;
+  line-height: 15rem;
+  letter-spacing: -1rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 50px;
+}
+
+.main-title__hello {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.main-title__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: left;
+  width: 600px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-top: 10px;
+  color: black;
+}
+
+/*GALERIA PRINCIPAL*/
+.main-gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*VALORES*/
+.section-value {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.section-value__item {
+  text-align: center;
+  color: white;
+}
+
+.section-value__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 60px;
+  color: white;
+  align-items: center;
+}
+
+.section-value__strongText {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/*SABER MAS SERVICIOS*/
+.section-servicios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 800px;
+  align-content: center;
+}
+
+.section-servicios__img {
+  margin-left: auto;
+  margin-bottom: 150px;
+}
+
+.section-servicios__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: white;
+  height: 350px;
+  width: 800px;
+  text-align: justify;
+  padding: 50px 50px 50px 50px;
+  margin-right: auto;
+}
+
+.section-servicios__strongText {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+/*CONTACTO*/
+.main-contact {
+  width: 500px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: left;
+}
+
+.section-contact__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  text-align: justify;
+  width: 100%;
+  height: 60px;
+  margin-top: 5%;
+}
+
+.main-form {
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30%;
+}
+
+.form__input {
+  outline: none;
+  border: 1.5px solid black;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans';
+}
+
+.form__item {
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*.main-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 500px;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 5rem;
+	text-align: left;
+}
+
+.section-contact {
+	height: 800px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 150px;
+}
+
+.main-form {
+	margin-left: 150px;
+	display: grid;
+	grid-column-gap: 40px;
+	grid-row-gap: 10px;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 50px 50px 200px 50px;
+	grid-template-areas: 
+	"name mail" "subject celular" "mensaje mensaje" "boton ."
+}
+
+.form__1 {
+	grid-area: name;
+}
+
+.form__2 {
+	grid-area: mail;
+}
+
+.form__3 {
+	grid-area: subject;
+}
+
+.form__4 {
+	grid-area: celular;
+}
+
+.form__5 {
+	grid-area: mensaje;
+}
+
+.form__6 {
+	grid-area: boton;
+}
+
+.form__item {
+	list-style-type: none;
+	list-style: none;
+	color: black;
+	font-family: 'Open Sans';
+	font-size:1.5rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+.section-contact__text {
+	text-align: left;
+	width: 400px;
+	height: 60px;
+	margin-top: 10%;
+}
+
+.form__input {
+	background-color: white;
+	outline: none;
+	border: 1.5px solid black;
+	width: 100%;
+	padding: 12px;
+	font-size: 1.2rem;
+	font-family: 'Open Sans';
+}*/
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*VARIABLES NOSOTROS*/
+/*-------------------- CAMBIOS en NOSOTROS ---------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-nosotros {
+  background-image: url(../media/inicionosotros.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-phrase {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 600px;
+  margin-bottom: 150px;
+}
+
+.main-phrase__text {
+  text-align: center;
+  width: 600px;
+}
+
+.main-phrase__strong {
+  font-family: 'Poppins';
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/*.photo-team {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}*/
+.photo-team {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 400px 50px 100px;
+  grid-template-areas: "img-tala img-gina" "text-title-tala text-title-gina" "text-tala text-gina";
+}
+
+.photo-team__tala {
+  grid-area: img-tala;
+}
+
+.photo-team__gina {
+  grid-area: img-gina;
+}
+
+.photo-team__title-tala {
+  grid-area: text-title-tala;
+}
+
+.photo-team__title-gina {
+  grid-area: text-title-gina;
+}
+
+.photo-team__texttala {
+  grid-area: text-tala;
+}
+
+.photo-team__textgina {
+  grid-area: text-gina;
+}
+
+.photo-team__text {
+  font-family: Open sans;
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: left;
+}
+
+.photo-team__title {
+  font-family: 'Poppins', sans serif;
+  font-size: 2rem;
+  color: black;
+}
+
+.section-us__text {
+  font-family: 'Open Sans', sans serif;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  background-color: lightblue;
+  height: 200px;
+}
+
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*-------------------- CAMBIOS en PORTFOLIO --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-portfolio {
+  background-image: url(../media/inicioportfolio1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 700px;
+  margin-bottom: 150px;
+}
+
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*-------------------- CAMBIOS en SERVICIOS --------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-servicios {
+  background-image: url(../media/inicioservicios.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 5s;
+}
+
+.animate__animated .animate__slideInRight {
+  --animate-duration: 5s;
+}
+
+.animate__animated .animate__slideInLeft {
+  --animate-duration: 5s;
+}
+
+.section1-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 600px;
+  margin-bottom: 150px;
+}
+
+.section1-service__textinicio {
+  text-align: center;
+  width: 600px;
+}
+
+.section1-service__strong {
+  font-family: 'Poppins';
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.main-services__title {
+  font-family: Poppins;
+  color: #F012BE;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-to-right {
+  padding-left: 5rem;
+}
+
+.main-services {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 700px 700px;
+  grid-template-rows: 400px 400px 400px 400px 400px 400px;
+  grid-template-areas: "imagen1 texto1" "texto2 imagen2" "imagen3 texto3" "texto4 imagen4" "imagen5 texto5" "texto6 imagen6";
+}
+
+.main-services__img1 {
+  grid-area: imagen1;
+}
+
+.main-services__img2 {
+  grid-area: imagen2;
+}
+
+.main-services__img3 {
+  grid-area: imagen3;
+}
+
+.main-services__img4 {
+  grid-area: imagen4;
+}
+
+.main-services__img5 {
+  grid-area: imagen5;
+}
+
+.main-services__img6 {
+  grid-area: imagen6;
+}
+
+/*black*/
+.main-services__text1 {
+  grid-area: texto1;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 2.5rem;
+  width: 400px;
+  align-items: center;
+  margin-top: 15%;
+  color: #000000;
+}
+
+.main-services__text2 {
+  grid-area: texto2;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 2.5rem;
+  width: 400px;
+  margin-top: 15%;
+  margin-left: 30%;
+  color: #000000;
+}
+
+.main-services__text3 {
+  grid-area: texto3;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 2.5rem;
+  width: 400px;
+  margin-top: 15%;
+  color: #000000;
+}
+
+.main-services__text4 {
+  grid-area: texto4;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 2.5rem;
+  width: 400px;
+  margin-top: 15%;
+  margin-left: 30%;
+  color: #000000;
+}
+
+.main-services__text5 {
+  grid-area: texto5;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 2.5rem;
+  width: 400px;
+  margin-top: 15%;
+  color: #000000;
+}
+
+.main-services__text6 {
+  grid-area: texto6;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 2.5rem;
+  width: 400px;
+  margin-top: 15%;
+  margin-left: 30%;
+  color: #000000;
+}
+
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*-------------------- CAMBIOS en FAQ --------------------------*/
+/*IMAGEN DE FONDO*/
+#inicio-faq {
+  background-image: url(../media/iniciofaq1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.intro-faq {
+  margin-top: 600px;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 100px 150px 300px;
+  grid-row-gap: 80px 100px;
+  grid-template-areas: "titulo" 
+ "texto" 
+ "preguntas";
+}
+
+.intro-faq__title {
+  grid-area: titulo;
+  font-family: 'Poppins';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+  width: 280px;
+}
+
+.intro-faq__text {
+  grid-area: texto;
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  text-align: left;
+  width: 220px;
+}
+
+.intro-faq__link {
+  grid-area: preguntas;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  text-align: left;
+  width: 220px;
+}
+
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
+/*VARIABLES MENU*/
+/*VARIABLES TITULOS SERVICIOS*/
+/*pink*/
+/*VARIABLES TEXTOS SERVICIOS*/
+/*black*/
+/*FOOTER*/
+.main-footer {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+
+.main-footer__GIPPA {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 60px;
+  color: white;
+  justify-content: center;
+}
+
+.main-footer__paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+}
+
+.main-footer__contact {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 60px;
+  color: white;
+}
+
+.main-footer__contact-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+}
+
+.FB {
+  background-image: url("media/FB.png");
+}
+
+.IG {
+  background-image: url("media/IG.png");
+}
+
+.main-footer__change {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.main-footer__change-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+}
+/*# sourceMappingURL=styles-scss.css.map */
