@@ -2,17 +2,17 @@
 
 /*-------------------- CAMBIOS en PORTFOLIO --------------------*/
 /*IMAGEN DE FONDO*/
-#inicio-portfolio {
+/*#inicio-portfolio {
 	background-image: url(../media/inicioportfolio1.png);
 	background-position: top center;
-	background-repeat: no-repeat;
-}
+	
+}*/
 
 .portfolio-gallery {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 700px;
-	margin-bottom: 150px;
+	margin-top: 30%;
+	margin-bottom: 30%;
 }

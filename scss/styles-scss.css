@@ -47,9 +47,12 @@ html {
 }
 
 /*MENÚ*/
-.nav__menu {
+.navbar-custom {
   background-color: white;
-  height: 40px;
+}
+
+#nav__menu {
+  background-color: white;
 }
 
 #header__menu a {
@@ -71,7 +74,7 @@ html {
   color: black;
   display: inline-block;
   font-family: Poppins;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 2rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -81,7 +84,7 @@ html {
   content: '';
   display: block;
   width: 0;
-  height: 4px;
+  height: 2px;
   background: black;
   transition: width 1s;
 }
@@ -117,17 +120,16 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 500px;
+  width: 50%;
   color: #000000;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 15rem;
+  font-size: 1500%;
   text-align: left;
   line-height: 15rem;
   letter-spacing: -1rem;
   margin-top: 10%;
   margin-bottom: 5%;
-  margin-left: 50px;
 }
 
 .main-title__hello {
@@ -135,7 +137,6 @@ p {
   font-weight: bold;
   font-size: 3rem;
   color: black;
-  margin-left: 50px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -146,8 +147,8 @@ p {
   display: inline-block;
   text-align: left;
   width: 600px;
+  height: 40px;
   text-align: justify;
-  margin-left: 50px;
   margin-top: 10px;
   color: black;
 }
@@ -162,25 +163,20 @@ p {
 
 /*VALORES*/
 .section-value {
-  display: flex;
-  align-content: center;
-  justify-content: center;
   background-color: black;
   width: 100%;
-  height: 300px;
+  height: 50%;
   margin-top: 150px;
   margin-bottom: 150px;
 }
 
 .section-value__item {
-  text-align: center;
   color: white;
 }
 
 .section-value__text {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  display: inline-block;
   margin-top: 60px;
   color: white;
   align-items: center;
@@ -375,7 +371,7 @@ p {
 }
 
 .main-phrase__text {
-  text-align: center;
+  textalign: center;
   width: 600px;
 }
 
@@ -455,19 +451,18 @@ p {
 /*black*/
 /*-------------------- CAMBIOS en PORTFOLIO --------------------*/
 /*IMAGEN DE FONDO*/
-#inicio-portfolio {
-  background-image: url(../media/inicioportfolio1.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
+/*#inicio-portfolio {
+	background-image: url(../media/inicioportfolio1.png);
+	background-position: top center;
+	
+}*/
 .portfolio-gallery {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 700px;
-  margin-bottom: 150px;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 /*------------------------------------VARIABLES DEL PROYECTO-----------------------------------------*/
@@ -644,9 +639,7 @@ p {
   grid-template-columns: 300px;
   grid-template-rows: 100px 150px 300px;
   grid-row-gap: 80px 100px;
-  grid-template-areas: "titulo" 
- "texto" 
- "preguntas";
+  grid-template-areas: "titulo"  "texto"  "preguntas";
 }
 
 .intro-faq__title {

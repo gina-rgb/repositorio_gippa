@@ -43,7 +43,11 @@ html {
 }
 
 /*MENÚ*/
-.nav__menu {
+.navbar-custom {
+	background-color: white;
+}
+
+#nav__menu {
 	background-color: white;
 }
 
@@ -66,7 +70,7 @@ html {
 	color: black;
 	display: inline-block;
 	font-family: Poppins;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 2rem;
 	padding-right: 1rem;
 	padding-left: 1rem;
@@ -76,7 +80,7 @@ html {
 	content: '';
 	display: block;
 	width: 0;
-	height: 4px;
+	height: 2px;
 	background: black;
 	transition: width 1s;
 }
