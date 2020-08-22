@@ -25,26 +25,37 @@
 
 </head>
 
-<body class="container-fluid" id="inicio-faq">
+<body id="inicio-faq">
     <!----------------------MENU---------------------->
-    <header id="header__menu">
+    <header id="header__menu" class="fixed-top">
 
-        <nav class="fixed-top nav__menu">
-            <a href="index.html">
-                <img class="main-logo  float-left" src="media/gippa-labb.png" alt="gippa-lab" width="300">
-            </a>
-            <ul class="main-menu">
-                <li class="main-menu__item cool__link"><a href="equipo.html" title="">Equipo</a></li>
+        <nav id="nav__menu" class="shadow p-3 mb-5 bg-white rounded navbar navbar-expand-md navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="main-menu__item cool__link"><a href="portfolio.html" title="">Portfolio</a></li>
+            <a class="navbar-brand" href="index.html"><img src="media/gippa-labb.png" alt="" class="img-fluid"
+                    width="20%"></a>
 
-                <li class="main-menu__item cool__link"><a href="servicios.html" title="">Servicios</a></li>
 
-                <li class="main-menu__item cool__link"><a href="faq.html" title="">FAQ</a></li>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-                <li class="main-menu__item cool__link"><a href="index.html#formulario" title="">Contacto</a></li>
-            </ul>
+                <div class="main-menu navbar-nav mr-auto text-center">
+                    <a class="main-menu__item cool__link nav-item nav-link active" href="equipo.html">Equipo</span></a>
+                    <a class="main-menu__item cool__link nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="main-menu__item cool__link nav-item nav-link" href="servicios.html">Servicios</a>
+                    <a class="main-menu__item cool__link nav-item nav-link" href="faq.html">Faq</a>
+                </div>
+                <div class="mr-auto">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
         </nav>
+
+
     </header>
 
     <!---------------------- SECCIÓN 1 -- QUE ES?? ---------------------->

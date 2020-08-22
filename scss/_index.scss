@@ -17,10 +17,8 @@
 	color: #000000;
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
-	font-size: 1500%;
+	font-size: 13vw;
 	text-align: left;
-	line-height: 15rem;
-	letter-spacing: -1rem;
 	margin-top: 10%;
 	margin-bottom: 5%;
 }
@@ -28,21 +26,18 @@
 .main-title__hello {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	font-size: 3rem;
+	font-size: 2vw;
 	color: black;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 5%;
+	margin-bottom: 3%;
 }
 
 .main-title__text {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.2vw;
 	display: inline-block;
 	text-align: left;
-	width: 600px;
-	height: 40px;
 	text-align: justify;
-	margin-top: 10px;
 	color: black;
 }
 
@@ -55,28 +50,25 @@
 }
 
 /*VALORES*/
-.section-value {
-	background-color: black;
-	width: 100%;
-	height: 50%;
-	margin-top: 150px;
-	margin-bottom: 150px;
-}
 
-.section-value__item {
-	color: white;
+.bg-custom {
+	background-color: black;
+	height: 50%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .section-value__text {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
-	margin-top: 60px;
+	font-size: 1.2vw;
 	color: white;
 	align-items: center;
 }
 
 .section-value__strongText {
-	font-size: 2rem;
+	font-size: 1.8vw;
 	font-weight: bold;
 	color: white;
 }
@@ -86,7 +78,6 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 800px;
 	align-content: center;
 }
 
@@ -115,128 +106,20 @@
 /*CONTACTO*/
 
 .main-contact {
-	width: 500px;
+	width: 100%;
 	color: #000000;
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
-	font-size: 5rem;
+	font-size: 4vw;
 	text-align: left;
 }
 
 .section-contact__text {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.2vw;
 	text-align: justify;
 	width: 100%;
-	height: 60px;
 	margin-top: 5%;
 }
 
-.main-form {
-	color: black;
-	font-family: 'Open Sans';
-	font-size:1.5rem;
-	font-weight: bold;
-	text-align: left;
-	margin-bottom: 30%;
-}
 
-.form__input {
-	outline: none;
-	border: 1.5px solid black;
-	width: 100%;
-	padding: 12px;
-	font-size: 1.2rem;
-	font-family: 'Open Sans';
-}
-
-.form__item {
-	font-family: 'Open Sans';
-	font-size:1.5rem;
-	font-weight: bold;
-	text-align: left;
-}
-
-
-/*.main-contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 500px;
-	color: #000000;
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	font-size: 5rem;
-	text-align: left;
-}
-
-.section-contact {
-	height: 800px;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 150px;
-}
-
-.main-form {
-	margin-left: 150px;
-	display: grid;
-	grid-column-gap: 40px;
-	grid-row-gap: 10px;
-	grid-template-columns: 200px 200px;
-	grid-template-rows: 50px 50px 200px 50px;
-	grid-template-areas: 
-	"name mail" "subject celular" "mensaje mensaje" "boton ."
-}
-
-.form__1 {
-	grid-area: name;
-}
-
-.form__2 {
-	grid-area: mail;
-}
-
-.form__3 {
-	grid-area: subject;
-}
-
-.form__4 {
-	grid-area: celular;
-}
-
-.form__5 {
-	grid-area: mensaje;
-}
-
-.form__6 {
-	grid-area: boton;
-}
-
-.form__item {
-	list-style-type: none;
-	list-style: none;
-	color: black;
-	font-family: 'Open Sans';
-	font-size:1.5rem;
-	font-weight: bold;
-	text-align: left;
-}
-
-.section-contact__text {
-	text-align: left;
-	width: 400px;
-	height: 60px;
-	margin-top: 10%;
-}
-
-.form__input {
-	background-color: white;
-	outline: none;
-	border: 1.5px solid black;
-	width: 100%;
-	padding: 12px;
-	font-size: 1.2rem;
-	font-family: 'Open Sans';
-}*/

@@ -43,10 +43,6 @@ html {
 }
 
 /*MENÚ*/
-.navbar-custom {
-	background-color: white;
-}
-
 #nav__menu {
 	background-color: white;
 }
@@ -59,7 +55,7 @@ html {
 .main-menu {
 	width: auto;
 	float: right;
-	margin-top: 20px;
+	margin-top: 5%5%;
 	color: black;
 }
 
@@ -80,7 +76,7 @@ html {
 	content: '';
 	display: block;
 	width: 0;
-	height: 2px;
+	height: 1.5px;
 	background: black;
 	transition: width 1s;
 }
@@ -94,5 +90,5 @@ html {
 
 p {
 	font-family: 'Open Sans';
-	font-size: 1.5rem;
+	font-size: 1.2vw;
 }

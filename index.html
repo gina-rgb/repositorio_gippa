@@ -29,35 +29,41 @@
 
 </head>
 
-<body class="mobile-nav-active" id="inicio-index">
+<body id="inicio-index">
     <button type="boton__menu" class="boton__menu mobile-nav-toggle d-lg-none">
         <i class="fas fa-bars boton__menu-icono"></i>
     </button>
     <!----------------------MENU---------------------->
+    <header id="header__menu" class="fixed-top">
 
-    <header class="fixed-top" id="header__menu">
-        <div class="container-fluid">
-            <div class="logo float-left">
-                <a href="index.html">
-                    <img class="main-logo img-fluid" src="media/gippa-labb.png" alt="gippa-lab" width="20%">
-                </a>
+        <nav id="nav__menu" class="shadow p-3 mb-5 bg-white rounded navbar navbar-expand-md navbar-toggleable-sm">
 
-                <nav class="nav__menu float-right d-none d-lg-block">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <ul class="main-menu">
-                        <li class="main-menu__item cool__link"><a href="equipo.html" title="">Equipo</a></li>
+            <a class="navbar-brand" href="index.html"><img src="media/gippa-labb.png" alt="" class="img-fluid"
+                    width="20%"></a>
 
-                        <li class="main-menu__item cool__link"><a href="portfolio.html" title="">Portfolio</a></li>
 
-                        <li class="main-menu__item cool__link"><a href="servicios.html" title="">Servicios</a></li>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-                        <li class="main-menu__item cool__link"><a href="faq.html" title="">FAQ</a></li>
-
-                        <li class="main-menu__item cool__link"><a href="#formulario" title="">Contacto</a></li>
-                    </ul>
-                </nav>
+                <div class="main-menu navbar-nav mr-auto text-center">
+                    <a class="main-menu__item cool__link nav-item nav-link active" href="equipo.html">Equipo</span></a>
+                    <a class="main-menu__item cool__link nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="main-menu__item cool__link nav-item nav-link" href="servicios.html">Servicios</a>
+                    <a class="main-menu__item cool__link nav-item nav-link" href="faq.html">Faq</a>
+                </div>
+                <div class="mr-auto">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
             </div>
-        </div>
+        </nav>
+
+
     </header>
 
     <!----------------------SECCIÓN 2 -- NOSOTROS---------------------->
@@ -66,9 +72,9 @@
             <div class="animate__animated animate__fadeInUp">
                 <h1 class="main-title font-size">Estudio Creativo</h1>
 
-                <h4 class="main-title__hello">¡Hola!</h4>
+                <h4 class="main-title__hello">¡Hola! Somos GIPPA LABB.</h4>
                 <br>
-                <p class="font-size main-title__text">Somos GIPPA LABB, un estudio creativo que produce ideas en un
+                <p class="font-size main-title__text">Un estudio creativo que produce ideas en un
                     laboratorio donde
                     experimentamos, nos divertimos y generamos soluciones a través del Diseño.</p>
                 <br>
@@ -87,9 +93,61 @@
         </section>
     </div>
 
+    <!---------------SECCIÓN 3 -- VISION/CREATIVIDAD/PASION--------------->
 
-    <!-------------------SECCIÓN 3 -- GALLERY/PORTFOLIO------------------->
+    <div class="row row-eq-height d-flex justify-content-center bg-custom">
+
+        <div class="col-lg-4 mb-4">
+            <div class="animate__animated animated__bounceInUp"
+                style="visibility: visible; animation-name: bounceInUp;">
+                <div>
+                    <h6 class="section-value__strongText">Team</h6>
+                    <p class="section-value__text"> Creemos en el trabajo en equipo y en las relaciones
+                        multidisciplinarias para potenciar los proyectos. La responsabilidad y la confianza son los
+                        pilares fundamentales de nuestro equipo.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="animate__animated animated__bounceInUp"
+                style="visibility: visible; animation-name: bounceInUp;">
+                <div>
+                    <h6 class="section-value__strongText">Creatividad</h6>
+                    <p class="section-value__text">Sabemos que todos los proyectos son únicos, por eso
+                        utilizamos diferentes métodos para alcanzar soluciones creativas que se ajusten a los
+                        diversos requerimientos de las personas que nos eligen.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="animate__animated animated__bounceInUp"
+                style="visibility: visible; animation-name: bounceInUp;">
+                <div>
+                    <h6 class="section-value__strongText">Pasión</h6>
+                    <p class="section-value__text">Nuestro principal motor para hacer lo que elegimos.
+                        Amamos el diseño en todas sus formas y nos gusta aprender constantemente de esta profesión.
+                        Nos motivan los desafíos y mejorar día a día.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    </section>
+
+    <!-------------------SECCIÓN 4 -- GALLERY/PORTFOLIO------------------->
     <div class="container">
+        <h2>Portfolio</h2>
+        <br>
         <section class="main-gallery">
             <img class="img-fluid" width="350" height="350" src="media/img1.png" alt="imagen1portfolio">
             <img class="img-fluid" width="350" height="350" src="media/img2.png" alt="imagen2portfolio">
@@ -101,64 +159,11 @@
     </div>
 
 
-    <!---------------SECCIÓN 4 -- VISION/CREATIVIDAD/PASION--------------->
-
-    <div class="container">
-
-        <div class="row row-eq-height justify-content-center">
-
-            <div class="col-lg-4 mb-4">
-                <div class="animate__animated animated__bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
-                    <div class="section-value__item text-light bg-dark">
-                        <h6 class="section-value__strongText">Team</h6>
-                        <p class="section-value__text"> Creemos en el trabajo en equipo y en las relaciones
-                            multidisciplinarias para potenciar los proyectos. La responsabilidad y la confianza son los
-                            pilares fundamentales de nuestro equipo.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="animate__animated animated__bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
-                        <div class="section-value__item text-light bg-dark">
-                        <h6 class="section-value__strongText">Creatividad</h6>
-                        <p class="section-value__text">Sabemos que todos los proyectos son únicos, por eso
-                            utilizamos diferentes métodos para alcanzar soluciones creativas que se ajusten a los
-                            diversos requerimientos de las personas que nos eligen.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="animate__animated animated__bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
-                        <div class="section-value__item text-light bg-dark">
-                        <h6 class="section-value__strongText">Pasión</h6>
-                        <p class="section-value__text">Nuestro principal motor para hacer lo que elegimos.
-                            Amamos el diseño en todas sus formas y nos gusta aprender constantemente de esta profesión.
-                            Nos motivan los desafíos y mejorar día a día.</p>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <br>
-    <br>
-    <br>
-    </section>
-
-
 
     <!---------------- SECCIÓN 5 -- SABER MAS/SERVICIOS ----------------->
     <section class="section-servicios container">
 
-        <img class="section-servicios__img" width="800" height="500" src="media/img-design.jpg" alt="fotobackf">
+        <img class="img-fluid section-servicios__img" width="800" height="500" src="media/img-design.jpg" alt="fotobackf">
 
         <h4 class="section-servicios__strongText">¿Querés saber más?</h4>
         <br><br><br>

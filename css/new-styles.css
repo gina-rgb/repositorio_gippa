@@ -62,7 +62,7 @@ html {
   color: black;
   display: inline-block;
   font-family: Poppins;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 2rem;
   padding-right: 1rem;
   padding-left: 1rem; }
@@ -71,7 +71,7 @@ html {
   content: '';
   display: block;
   width: 0;
-  height: 4px;
+  height: 1.5px;
   background: black;
   transition: width 1s; }
 
@@ -575,7 +575,9 @@ p {
   grid-template-columns: 300px;
   grid-template-rows: 100px 150px 300px;
   grid-row-gap: 80px 100px;
-  grid-template-areas: "titulo"  "texto"  "preguntas"; }
+  grid-template-areas: "titulo" 
+ "texto" 
+ "preguntas"; }
 
 .intro-faq__title {
   grid-area: titulo;
